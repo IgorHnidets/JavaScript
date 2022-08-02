@@ -1,11 +1,11 @@
 //1
 // const user = {
-//     name:'ПИЛИП',
-//     surname:'ШЕВЧЕНКО'
 // }
+// user.name = 'ПИЛИП';
+// user.surname = 'ШЕВЧЕНКО';
 // user.name = 'СЕРГІЙ';
 // delete user.name;
-// // console.log(user);
+// console.log(user);
 // for (let key in user){
 //     console.log(key + ' value: ' + user[key])
 // }
