@@ -1,14 +1,14 @@
 //1
-// const user = {
-// }
-// user.name = 'ПИЛИП';
-// user.surname = 'ШЕВЧЕНКО';
-// user.name = 'СЕРГІЙ';
-// delete user.name;
-// console.log(user);
-// for (let key in user){
-//     console.log(key + ' value: ' + user[key])
-// }
+const user = {
+}
+user.name = 'ПИЛИП';
+user.surname = 'ШЕВЧЕНКО';
+user.name = 'СЕРГІЙ';
+delete user.name;
+console.log(user);
+for (let key in user){
+    console.log(key + ' value: ' + user.surname[key])
+}
 
 //2
 
@@ -52,30 +52,30 @@
 // console.log(`Suma = ${calc.findsum()} \nSubtract = ${calc.findsubtract()} \nMultiple = ${calc.findmult()} \nDivide = ${calc.finddiv()}`)
 
 //sasha
-    function Calc(){
-    var a = Number(prompt('Enter first number'));
-    var b = Number(prompt('Enter last number'));
-    var operation = prompt('Enter operation you want');
-    switch (operation) {
-        case '+':
-            alert("a + b = " + (a + b));
-            break;
-        case '-':
-            alert("a - b = " + (a - b));
-            break;
-        case '*':
-            alert("a * b = " + (a * b));
-            break;
-        case '/':
-            if (b === 0){
-                alert('Cant divide on 0');
-            } else
-            alert("a / b = " + (a / b));
-            break;
-        default:
-            console.log("Error");
-    }
-}
-
-console.log(Calc());
+//     function Calc(){
+//     var a = Number(prompt('Enter first number'));
+//     var b = Number(prompt('Enter last number'));
+//     var operation = prompt('Enter operation you want');
+//     switch (operation) {
+//         case '+':
+//             alert("a + b = " + (a + b));
+//             break;
+//         case '-':
+//             alert("a - b = " + (a - b));
+//             break;
+//         case '*':
+//             alert("a * b = " + (a * b));
+//             break;
+//         case '/':
+//             if (b === 0){
+//                 alert('Cant divide on 0');
+//             } else
+//             alert("a / b = " + (a / b));
+//             break;
+//         default:
+//             console.log("Error");
+//     }
+// }
+//
+// console.log(Calc());
 
