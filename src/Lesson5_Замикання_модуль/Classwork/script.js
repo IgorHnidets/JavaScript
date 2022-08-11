@@ -1,15 +1,11 @@
 //code time
 
-const ShoppingBucket = {
-    name : 'test',
-    price:'100',
-}
 
 class ShoppingBucket{
     items = [];
 
     addItem(item){
-        this.items.push
+        this.items.push(item);
     }
 
     getCount(){
@@ -19,17 +15,26 @@ class ShoppingBucket{
        const sum = this.items.reduce((acc,current) => acc+current.price, 0);
        return Math.floor(sum)
     }
+    displayAll(){
+        this.items.forEach((item) => console.log(item))
+    }
 }
-const item ={
-    name: 'Tomato',
-    price:100
-}
-const bucket = ShoppingBucket();
 
-bucket.addItem(item);
-bucket.addItem(item);
-console.log(bucket.getCount(item));
-bucket.getsum(item);
+function makeItem(){
+    return{
+        name: 'Tomato',
+        price:100
+    }
+}
+
+const bucket = new ShoppingBucket();
+
+bucket.addItem(makeItem(100));
+bucket.addItem(makeItem(100));
+bucket.addItem(makeItem(100));
+console.log(bucket.getCount());
+console.log(bucket.getsum());
+console.log(bucket.displayAll())
 
 
 // class User {

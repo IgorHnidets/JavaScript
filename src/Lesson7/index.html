@@ -1,0 +1,120 @@
+<!
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Client js</title>
+</head>
+<style>
+    .div-block{
+        height: 100px;
+        background: darkblue;
+        transition: 1000ms;
+    }
+    .red{
+        background: red;
+    }
+    .btn{
+        text-align: center;
+    }
+</style>
+<body>
+
+<div class="btn">
+<button onclick="minushandle()">-</button>
+    <button onclick="plushandle()">+</button>
+</div>
+<div id="block" class="div-block" type  >
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, repellendus.
+    </p>
+</div>
+
+
+
+<input type="text" id="input" disabled>
+
+<span class="div-block">
+
+</span>
+<script>
+    let block = document.getElementById("block");
+    let input = document.querySelector("#input");
+    console.log(block.getAttribute("class"));
+
+    // setInterval(()=> {
+        // if (block.classList.contains("red")){
+        //     block.classList.remove("red");
+        // } else {
+        //     block.classList.add("red");
+        // }
+    //     block.classList.toggle("red")
+    // },2000)
+
+
+    // let elementById = document.getElementById("block");
+    // let input = document.querySelector("#input");
+    // console.log(elementById.getAttribute("class"));
+    //
+    // setTimeout(()=> {
+    //     elementById.setAttribute("class", "red");
+    //
+    //     console.log(elementById.getAttribute("class"))
+    //
+    //     if (input.hasAttribute("disabled")) {
+    //         input.removeAttribute("disabled")
+    //     } else {
+    //         input.setAttribute("disabled", "disabled");
+    //     }
+    // },2000)
+
+
+// <!--    Повертає 1 елемент-->
+    // let block = document.getElementById("block");
+    // console.log(block.children);
+    // // return HTML collection
+    // let block1 =document.getElementsByClassName("div-block");
+    // console.log(block1);
+    // let block2 =document.getElementsByTagName('p');
+    // console.log(block2);
+    // let elementsByTagName = document.getElementsByTagName("p");
+    // console.log(elementsByTagName);
+    // let element = document.querySelectorAll(".div-block > p");
+    // console.log(element);
+
+
+
+
+
+    // function plushandle() {
+    //     let element = document.querySelector("ablock");
+    //     element.style.backgroundColor = 'blue'
+    //     element.style.height = '300px'
+    //     element.style.color = 'white'
+    //     element.innerText = 'lorem3'
+    //     element.innerHTML = '<h1>Heading</h1> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</p>'
+    //     h1.innerText = "sometext";
+    //     element.append(h1)
+    // }
+    // function minushandle() {
+    //     let element = document.querySelector("ablock");
+    //     element.style.backgroundColor = 'blue'
+    //     element.style.height = '300px';
+    //     element.innerText = ''
+    // }
+
+
+
+    //
+    // console.log(block.dataset.type)
+
+
+
+</script>
+
+
+
+</body>
+</html>

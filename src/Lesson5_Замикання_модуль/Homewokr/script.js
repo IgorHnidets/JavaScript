@@ -22,19 +22,22 @@
 
 function makeBuffer2(){
     var text = '';
-    return  function (value){
+    var buffer = function (value){
         if (arguments.length === 0){
             return text ;
-        } else if (value === 1){
-            return text = '';
         }
         text +=value;
     }
+    buffer.clear = function (){
+        return text = '';
+    }
+    return buffer;
 }
 
 var buffer3 = makeBuffer2();
 buffer3("Тест ");
 buffer3("тебе не з'їсть");
 console.log(buffer3());
-buffer3(1);
-console.log(buffer3())
+buffer3.clear();
+console.log(buffer3());
+
