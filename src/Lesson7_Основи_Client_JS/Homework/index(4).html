@@ -1,0 +1,88 @@
+<!
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    .div-block{
+        width: 100%;
+        font-size: 20px;
+        padding: 20px;
+        transition: 300ms;
+
+    }
+    button{
+        background: #4f4ff1;
+        margin-left: 6%;
+        margin-top: 50px;
+        height: 30px;
+        cursor: pointer;
+    }
+    body{
+        margin: 0;
+    }
+
+
+    .external-red {
+        background-color: red;
+        color: red;
+    }
+
+</style>
+
+
+<!--<button onclick="RollUp1()">Заголовок(Task4)</button>-->
+<!--<button onclick="RollUp2()">Менше тексту</button>-->
+<!--<div id="block" class="div-block"><br>-Університет</div>-->
+
+
+<button onclick="red_a()">Task 5</button>
+<ul id="ul-id">
+    <li><a href="http://google.com">http://google.com</a></li>
+    <li><a href="/tutorial">/tutorial.html</a></li>
+    <li><a href="local/path">local/path</a></li>
+    <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+    <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+    <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+</ul>
+
+
+<script>
+    
+    function red_a() {
+        let elems= document.querySelectorAll('a')
+        for (var i= 0; i<elems.length; i++) {
+            if (elems[i].matches('a[href=`http://`]')) {
+                elems.classList.add("external-red")
+        }
+        }
+    }
+
+
+    //    Task 4
+    // function RollUp1() {
+    //     let element = document.querySelector("#block");
+    //     element.style.height = "400px";
+    //     element.innerHTML = `<div><br> -Університет <br><br>---кафедраІСМ <br><br>---кафедраЕСМ<br><br> ---кафедраполітології</div>`
+    //
+    // }
+    // function RollUp2() {
+    //     let element = document.querySelector("#block");
+    //     element.style.height = "80px";
+    //     element.innerHTML = `<div><br> -Університет <br></div>`
+    // }
+
+
+
+
+
+</script>
+
+</body>
+</html>
