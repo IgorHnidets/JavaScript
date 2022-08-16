@@ -36,14 +36,23 @@
     </p>
 </div>
 
+<input type="password" oninput="onInput(this)"   placeholder="Password">
 
-
-<input type="text" id="input" disabled>
+<!--<input type="text" id="input" disabled>-->
 
 <span class="div-block">
 
 </span>
 <script>
+
+
+    function onInput(el) {
+        setTimeout(() => {
+            console.log(el.value)
+        }, 1000);
+    }
+
+
 
     function handle(){
         let element = document.querySelector("#block");

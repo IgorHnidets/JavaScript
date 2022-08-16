@@ -1,0 +1,82 @@
+<!
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events Hometask</title>
+</head>
+<body>
+
+<style>
+
+    .div-block{
+        height: 300%;
+        font-size: 70px;
+    }
+    .div-block1{
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+    }
+
+</style>
+<!--    FOR oncontextmenu,ondblclick,onfocus    -->
+<!--<div id="res" ></div>-->
+<!--<div class="div-block" id="el_scroll" oncontextmenu="Context()" ondblclick="dblclck()" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda culpa eaque et magnam officia praesentium reiciendis!-->
+<!--    Autem doloremque expedita nesciunt odio perferendis quod ratione voluptas voluptate? Ab animi autem, consectetur consequatur cupiditate delectus deserunt, distinctio-->
+<!--    eligendi error fugiat id illo illum ipsa itaque labore minima, optio perferendis quaerat quasi repellendus repudiandae sed temporibus vitae. Aperiam corporis cumque deserunt eius est expedita illo maxime nihil repellat voluptatibus? Amet assumenda culpa ex exercitationem libero nesciunt non quasi rem tempore voluptatem. Ad aperiam, cupiditate dolorem est id ipsum iure maiores mollitia nemo odio perspiciatis placeat provident quasi qui ratione repellat reprehenderit vero?</div>-->
+
+<div class="div-block1" id="divFocus" onfocus="focus()"></div>
+
+
+<!--    FOR onsubmit,onreset    -->
+<!--<form id="form" onsubmit="alert('Submit')" onreset="Reset()" >-->
+<!--    Enter your email:<input type="text">-->
+<!--    <input style="color: green" type="submit" value="Відправити форму">-->
+<!--    <input type="reset">-->
+<!--</form>-->
+
+
+<script>
+  //      onscroll
+  // document.onscroll=function(){
+  //     alert("прокручування"); }
+
+  // document.onscroll=function(e){
+  //     document.getElementById("res").innerHTML="window.scrollX: "+window.scrollX+"<br>window.scrollY: "+window.scrollY+"<br>window.scrollMaxX: "+window.scrollMaxX+"<br> window.scrollMaxY: "+window.scrollMaxY;
+  // };
+  //
+  // document.getElementById('el_scroll').onscroll=function(){
+  //     if(this.scrollTop+this.offsetHeight===this.scrollHeight){alert('прокрутка сягнула кінця');}
+  // };
+
+//  reset
+//   function Reset() {
+//       alert('Email was reset');
+//   }
+
+//  oncontextmenu
+// function Context(){
+//     alert('Викликано контекстне меню');
+// }
+
+
+//  ondoubleclick
+//   function dblclck() {
+//       let element = document.querySelector('#el_scroll');
+//       element.style.backgroundColor = 'red';
+//   }
+
+
+//  onfocus
+ function focus() {
+      let el = document.getElementById('divFocus')
+      el.style.backgroundColor = 'pink';
+      alert("Focus");
+  }
+
+</script>
+</body>
+</html>

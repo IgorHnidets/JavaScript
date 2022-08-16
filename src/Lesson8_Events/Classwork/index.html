@@ -1,0 +1,99 @@
+<!
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+
+    .block{
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+    }
+    .btn{
+        width: 100px;
+        background: green;
+        color: white;
+        box-shadow: 0 0 10px gray;
+        cursor: pointer;
+        border: 1px solid lightblue;
+    }
+    .error{
+        color: red;
+    }
+    .hide{
+        display: none;
+    }
+</style>
+
+<!--<button class="btn" id="plus">Plus</button>-->
+<!--<h2 id="h2">Count</h2>-->
+
+
+<!--<input  onfocus="handlefoc(event)" onblur="handleblur(event)" type="text" value="enter name">-->
+<!--<div class="error hide"></div>-->
+
+
+
+<!--<div class="btn" onclick="h1()">-->
+<!--    <div onclick="h2()">-->
+<!--        <div class="btn" onclick="h3()">click-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="block" onmousemove="handlcl(event)">
+
+</div>
+
+<script >
+
+
+    function handlcl(event) {
+     const avg = (event.x + event.y)/2;
+     event.currentTarget.style.backgroundColor = `rgb(${event.x},${avg},${event.y})`
+    }
+
+
+    // function handlefoc(event) {
+    //     event.currentTarget.style.border = '1px solid black'
+    //     const div = document.querySelectorAll('div')
+    //     div[0].classList.add('hide')
+    // }
+    //
+    // function handleblur(event) {
+    //     event.currentTarget.style.border = '1px solid red'
+    //     console.log(this.value);
+    //     if (!this.value||this.value.length){
+    //         const div = document.querySelectorAll('div')
+    //         div[0].classList.remove('hide')
+    //     }
+    // }
+
+
+    // let counter = 0;
+    //
+    // let elementById = document.getElementById('h2');
+    //
+    // elementById.addEventListener('mousemove',()=>{
+    //     // console.log('move')
+    // })
+    //
+    // function handle() {
+    //     console.log(this);
+    //     counter++;
+    //     console.log(counter);
+    //     elementById.innerText = 'Count:' + counter;
+    // }
+    // // document.getElementById('plus').onclick = handle;
+    // document.getElementById('plus').addEventListener('contextmenu',handle)
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    button{
+        width: 100px;
+        height: 30px;
+    }
+</style>
+<div>Массив = [24,24,15,6,74,3,5,67,343,7,689,75]</div>
+<button onclick="Sort()">Сортувати</button>
+<div id="div"></div>
+
+
+<script>
+    const array = [24,24,15,6,74,3,5,67,343,7,689,75]
+function Sort(){
+        const a = function (a,b) {
+            if (a > b) {
+                return 1;
+            } else {
+                return -1;
+            }
+        }
+        array.sort(a);
+        div = document.getElementById('div');
+        div.innerHTML = `<div>Відсортований масив =  ${array}</div>`
+    // document.write(array);
+    }
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
