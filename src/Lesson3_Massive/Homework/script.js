@@ -39,12 +39,17 @@
 // console.log(filterRange())
 
 //5
-function camelize(){
-    var arr = ['my','hort','tring'];
-    var str = arr.join('-s');
-    console.log(str);
-    var str = arr.join('S');
-    console.log(str);
-}
+// function camelize(){
+//     var arr = ['my','hort','tring'];
+//     var str = arr.join('-s');
+//     console.log(str);
+//     var str = arr.join('S');
+//     console.log(str);
+// }
+//
+// console.log(camelize())
 
-console.log(camelize())
+const igor = 5;
+console.log(igor)
+ igor = 6;
+console.log(igor)

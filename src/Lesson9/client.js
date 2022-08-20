@@ -1,4 +1,4 @@
-const URL = '' ;
+const URL = 'https://jsonplaceholder.typicode.com/posts' ;
 
     // function sendReq() {
     //     fetch(URL,{
@@ -10,27 +10,27 @@ const URL = '' ;
     //         console.log(json);
     //     });
     // }
+    // sendReq();
 
 async function sendReq() {
-    fetch(URL,{
-        method:'GET'
-    }).then((response)=>{
-        console.log(response);
-        return  response.json();
-    }).then((json)=>{
-        console.log(json);
+    const responce = await fetch(URL,
+        {method:'GET'
     });
-    const res = await fetch(URL,{method:'GET'});
-    const js = await response.json();
-    console.log(js);
+    const json = await responce.json();
+    console.log(json);
+    displaydata(json)
 }
 
-sendReq()
 
-function displaydata() {
-    const container = document.getElementById('container')
+function displaydata(data) {
+    let container = document.getElementById('container')
     for (const item of data) {
-        container.innerHTML =  ``
+        container.innerHTML +=  `
+        <div class="c_item">
+        <p>${item.id}</p>
+        <h3>${item.title}</h3>
+        <p>${item.body}</p>
+</div> `
     }
 }
 
